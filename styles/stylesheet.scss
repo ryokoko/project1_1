@@ -1,0 +1,517 @@
+
+$primary-bgColor: #fdd371;
+$secondary-bgColor: #e9e7e7;
+$content-bgColor: white;
+$primary-font-color: #524c49;
+$secondary-font-color:#2c8d39;
+$link-active-color: #f99f6f;
+$mask-color: rgba(245, 227, 63, 0.267);
+
+/* shadow */
+$shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+
+$font-weight: 500;
+$font: Arial, Helvetica, sans-serif;
+$nav-font-size: 2rem;
+$breakpoint: 768px;
+
+
+@mixin mask-module {
+        padding: 2% 5%;
+        background-color: $mask-color;
+        position: relative;
+        &:hover {
+            box-shadow: $shadow;
+        }
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+body {
+    background-color: $secondary-bgColor;
+    div, p, label {
+        font-size: 1.5rem;
+    }
+    a {
+        cursor:pointer;
+    }
+}
+@media (min-width: $breakpoint) {
+.header__section {
+    height: 80px;
+    width: 100%;
+    background-color: $primary-bgColor;
+
+}
+.header__name {
+    float: left;
+    color: $primary-font-color;
+    font-weight: $font-weight;
+    font-size: 35px;
+    margin: 15px 4%;
+    span {
+        color: $link-active-color;
+    }
+}
+.header__nav {
+    float: right;
+    height: 80px;
+
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 80px;
+
+    li {
+        color: $primary-font-color;
+        padding-right: 10%;
+        font-size: $nav-font-size;
+        a {
+            color:$primary-font-color;
+            &:active {
+                color: $link-active-color;
+            }
+        }
+    }
+}
+.header__mobile {
+    display: none;
+}
+.main {
+    margin: 40px 8%;
+}
+}
+
+/* Small devices */
+@media (max-width: $breakpoint) {
+    header {
+        display: none;
+    }
+    .header__mobile {
+        height: 60px;
+        width: 100%;
+        background-color: $primary-bgColor;
+        color: $primary-font-color;
+        box-shadow: $shadow;
+    }
+    /* 记得用mixin来做header__name */
+    .header__name {
+        float: left;
+        color: $primary-font-color;
+        font-weight: $font-weight;
+        font-size: 35px;
+        margin-left: 20px;
+        padding-top: 5px;
+        span {
+            color: $link-active-color;
+        }
+    }
+    #sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        background-color: $primary-bgColor;
+        color: $primary-font-color;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        a {
+            padding: 10px;
+            display: block;
+            transition: 0.3s;
+            font-size: $nav-font-size;
+            color: $primary-font-color;
+            text-align: center;
+            &:hover {
+                color: $primary-font-color;
+            }
+            &:active {
+                color: $link-active-color;
+            }
+        }       
+    }
+    #btn--close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        margin-left: 50px;
+        font-size: $nav-font-size;
+    }
+    #btn--open {
+        float: right;
+        cursor: pointer;
+        margin: 10px 20px;
+        font-size: 30px;
+        &:hover {
+            color: $link-active-color;
+        }
+    }
+    .main {
+        margin: 20px;
+        box-shadow: $shadow;
+        z-index:2;
+    }
+}
+
+
+.row {
+    padding: 20px;
+    width: 100%;
+}
+
+h1, h2, h3, div {
+    color: $primary-font-color;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main {
+    background-color: $content-bgColor;
+    border-radius: 10px;
+    z-index:2;
+    .home__header {
+        width: 100%;
+        height: 40%;
+        background-image: url(../images/title_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+        .header__photo {  
+            max-width: 200px;
+            margin: 0 auto;
+            /* border: 5px solid $secondary-bgColor; */
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .icons {
+        a {
+            font-size: 3rem;
+            color: $primary-font-color;
+            padding: 1%;
+            transition: 0.2s;
+            text-decoration: none;
+            &:hover {
+                color:$link-active-color;
+                text-decoration: none;
+                transform: translate(0, -2px);
+            }
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+    .title-block, .icons {
+        text-align: center;
+        padding: 2%;
+    }
+    .home__content {
+        font-size: 1.5rem;
+        min-height: 350px;
+        width: 100%;
+    } 
+    .about-me {
+        color:$primary-font-color;
+        span {
+            color:$link-active-color;
+        }
+
+    }
+    .about-details {
+                margin-top: 20px;
+                list-style-type: none;
+                padding: 0;
+                li {
+                    margin-top: 10px;
+                    .details__key {
+                        min-width: 100px;
+                        color: $link-active-color;
+                        display: inline-block;
+                    }
+                    .details__value {
+                        color: $primary-font-color;
+                        a {
+                            text-decoration: none;
+                            color: $link-active-color;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                            
+                        }
+                    }
+                }
+
+        }
+}
+
+    
+
+
+
+
+    /* Resume Page */
+    .header--general {
+        padding: 5%;
+        background-image: url(../images/title_bg1.jpg);
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+
+    }
+    .content--general {
+
+        background-color: $content-bgColor;
+        color:$primary-font-color;
+        width:100%;
+        border-radius: 0 0 10px 10px;
+
+    }
+    .timeline {
+        border-left: solid 2px $secondary-bgColor;
+        padding: 2% 0;
+        width:100%;
+    }
+    .timeline__block {
+        @include mask-module();
+        border-left: solid 2px $secondary-bgColor;
+        margin: 30px;
+        width: 100%;
+
+
+        &:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            border: solid 5px $secondary-bgColor;
+            position: absolute;
+            top: 35px;
+            left: -37px;
+            z-index:5;
+        }
+        &:after {
+            content: "";
+            display: inline-block;
+            background-color: $secondary-bgColor;
+            position: absolute;
+            width:30px;
+            height: 2px;
+            border-radius: 10px;
+            top: 39px;
+            left: -30px;
+            z-index:4;
+        }
+        span {
+            padding: 2px 5px;
+        }
+        .duration {
+            border-right: 1px solid $secondary-bgColor;
+            color: $link-active-color;
+        }
+        
+}
+.skill__block {
+    list-style-type: square;
+    li {
+        padding: 2% 5%;
+        &::marker {
+            color:$link-active-color;
+            font-size: 2rem;
+        }
+    }
+}
+
+.cert__block {
+    p {
+        padding: 1% 5%;
+        font-size: 3rem;
+        color:$link-active-color;
+    }
+    div {
+        padding-right: 2%;
+    }
+}
+
+.margin--auto {
+    margin: auto;
+}
+   
+/* Services page */
+    .service__block {
+            @include mask-module();
+            min-height:200px;
+            text-align: center;
+            span, .service__title {  
+
+                color: $link-active-color;
+                }
+            .service__intro {
+                color:$primary-font-color;
+            }           
+     }
+     ol {
+        list-style-type: disc;
+    }
+     .client__block {
+         text-align: center;
+         &:hover {
+            transform: translate(0, -2px);
+         }        
+         a {
+             text-decoration: none;
+             color:$primary-font-color;
+             &:hover {
+                color: $link-active-color;
+             }
+        }
+     }
+     .client__image {
+         img {
+              border-radius: 50px;
+              box-shadow: $shadow;
+              width: 50%;
+              height: 50%;
+         }
+           
+     }
+
+     /* Blog page */
+     .blog__block {
+        padding: 0 5%;
+        margin-top: 5%;
+        .blog__media {
+            height:80%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            &:hover {
+               .mask {
+                visibility:visible;
+               }
+            }
+            .mask {
+                height: 100%;
+                width:100%;
+                position: absolute;
+                background-color: $mask-color;
+                z-index:3;
+                top: 0px;
+                visibility:hidden;
+                p {
+                    text-align: center;
+                    color: $secondary-bgColor;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%);
+
+                }
+                
+            }
+            .date {
+                position: absolute;
+                top: 6%;
+                right:6%;
+                min-width: 44px;
+                background-color: $secondary-bgColor;
+                color:$secondary-font-color;
+                z-index: 2;
+                text-align: center;
+                font-weight: 600;
+                padding: 0.3rem;
+                .day {
+                    font-size: 1.7rem;
+                }
+                .month {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .blog__title {
+            text-align: center;
+            padding: 2% 5%;
+            
+            background-color: $secondary-bgColor;
+            text-decoration: none;
+            a {
+                font-weight: 600;
+                color:$primary-bgColor;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+        }
+     }
+    
+     /* Contact page */
+     #map {
+         height: 200px;
+         width: 100%;
+         margin-bottom: 5%;
+     }
+     .contact__details {
+         color:$primary-font-color;
+         span {
+             margin-right: 10px;
+             color: $link-active-color;
+         }
+     }
+     form {
+         label {
+             color:$primary-font-color;
+             font-weight: normal;
+         }
+         input, textarea {  
+             width: 70%;          
+             padding: 5px 2%;
+             margin: 2% 0;
+             border-radius: 5px;
+             border: 1px solid $secondary-bgColor;
+             &:focus {
+                 border: 3px solid $link-active-color;
+             }
+        }
+        .btn--submit {
+            float: right;
+            border-radius: 5px;
+            background-color: $content-bgColor;
+            color:$primary-font-color;
+            &:hover {
+                background-color: $primary-bgColor;
+                color:$content-bgColor; 
+            }  
+        }
+     }
+
+/* Footer */
+    .footer {
+        color:$secondary-font-color;
+        position: fixed;
+        font-size: 1rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 5%;
+        z-index:1;
+        a {
+            color: $link-active-color;
+            text-decoration: none;
+        }
+    }

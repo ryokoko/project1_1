@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PRO Card, professionals, radiographer, clinical, x-ray, resume">
+    <meta name="keywords" content="vcard, responsive, retina, resume, healthcare, employment, portfolio">
+    <meta name="author" content="stella">
+    <title>Rebecca Li</title>
+    <!-- Bootstrap 3.4.1 -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Bootstrap for Javascript -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/stylesheet.css"></style>
+    <!-- Social media icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://use.fontawesome.com/a6c75b7f29.js"></script>
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Google maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0yQovZ4z7LYB19-97isUQNrGa9Y-W_ms&callback=initMap"
+    type="text/javascript"></script>
+</head>
+<body>
+    <!-- Desktop Header -->
+    <header>
+        <div class="header__section">
+            <div class="header__name">Rebecca <span>Li</span></div>
+            <div class="header__nav">
+                <ul class="navbar">
+                    <li><a class="tab__home">Home</a></li>
+                    <li><a class="tab__resume">Resume</a></li>
+                    <li><a class="tab__services">Services</a></li>
+                    <li><a class="tab__contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+     <!-- Mobile & Tablet Header -->
+     <div class="header__mobile">
+        <div class="header__name">Rebecca <span>Li</span></div>
+        <div id="sidebar">
+            <a href='javascript:void(0)' id='btn--close'>&times;</a>
+            <a class="tab__home">Home</a>
+            <a class="tab__resume">Resume</a>
+            <a class="tab__services">Services</a>
+            <a class="tab__contact">Contact</a>
+        </div>
+        <div id="btn--open">&#9776;</div>        
+    </div>
+
+     <!-- Home Main Content-->
+     <section class="home__page">
+        <div class="main">
+            <!-- Header -->
+            <div class="container home__header">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="header__photo">
+                            <img src="./images/profile_img.jpg" alt="profile photo">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="title-block">
+                            <h1>Rebecca Li</h1>
+                            <div class="title">Junior Radiographer</div>
+                        </div>
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/liangzi-li-stella/" target="_blank" class="fa fa-linkedin"></a>
+                            <a href="https://github.com/ryokoko" target="_blank" class="fa fa-facebook"></a>
+                            <a href="https://www.instagram.com/ryoko.r_/" target="_blank" class="fa fa-instagram"></a>
+                        </div>
+                    </div>  
+            </div>
+         </div>
+         <div class="container home__content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-me">
+                        <h3>About Me</h3>
+                        <div>Hi there! My name is Rebecca. I am a highly motivated 2020 radiography graduate from
+                             the University of Sydney. I enjoy providing high-quality care to the general public and 
+                             working in a team environment, whilst maintaining independence. I have worked in both 
+                             hospitals and fast-paced private practices.</div>
+                    </div>                    
+                </div>
+                <div class="col-md-6">
+                    <ul class="about-details">
+                        <li>
+                            <span class="details__key">Education</span><span class="details__value">Associate of Applied Science: Diagnostic Radiography</span>
+                        </li>
+                        <li>
+                            <span class="details__key">Residence</span><span class="details__value">Australia</span>
+                        </li>
+                        <li>
+                            <span class="details__key">Email</span><span class="details__value"><a href="mailto:lrzrebecca@noname.com">lrzrebecca@noname.com</a></span>
+                        </li>
+                        <li>
+                            <span class="details__key">Mobile</span><span class="details__value">+61 040 6678 889</span>
+                        </li>
+                        <li>
+                            <span class="details__key">Address</span><span class="details__value">123 Nonamelane, Box Hill VIC 3128</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+     </section>
+
+      <!-- Resume Main Content -->
+    <section class="resume__page">
+        <div class="main">
+           <div class="header--general">
+               <h2>Resume</h2>
+           </div>
+           <div class="container content--general">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Experience</h2>
+                        <div class="timeline">
+                            <!-- exp 1 -->
+                            <div class="timeline__block">
+                                <h4 class="title">Student Radiographer</h4>
+                                <span class="duration">07/2020 - 09/2020</span>
+                                <span class="org">St George Hospital</span>
+                                <ol class="intro">
+                                    <li>Captured images using mobile equipment
+                                         in ICU, emergency rooms, and patients' bedsides</li>
+                                    <li>Use O-arm in theatre</li>
+                                    <li>Able to do x-ray and CT for trauma patients</li>
+                                    <li>Created images using fluoroscopy to help 
+                                        physicians assess and diagnose patients</li>
+                                    <li>Infection control</li>
+                                </ol>
+                            </div>
+                            <!-- exp 2 -->
+                            <div class="timeline__block">
+                            <h4 class="title">Student Radiographer</h4>
+                            <span class="duration">01/2020 - 04/2020</span>
+                            <span class="org">Bankstown Health Imaging</span>
+                            <ol class="intro">
+                                 <li>Able to prepare for BA swallow, IV contrast, and Gastrografin</li>
+                                 <li>Able to use DEXA to create images</li>
+                            </ol>
+                            </div>
+                            <!-- exp 3 -->
+                            <div class="timeline__block">
+                            <h4 class="title">Student Radiographer</h4>
+                            <span class="duration">07/2019 - 09/2019</span>
+                            <span class="org">Bankstown Imaging - Healthcare Imaging Services</span>
+                            <ol class="intro">
+                             <li>Prepared and administered contrast materials and anesthetic for 
+                                 imaging procedures</li>
+                             <li>Observe ultrasound</li>
+                             <li>Assist facet joint injection</li>
+                             <li>Able to use different brands of general x-ray machine,
+                                  CT machine, OPG machine, and familiar with different system 
+                                  including PACS and Visage</li>
+                             <li>Able to arrive and bill patients at reception</li>
+                            </ol>
+                            </div>
+                            <!-- exp 4 -->
+                            <div class="timeline__block">
+                            <h4 class="title">Student Radiographer</h4>
+                            <span class="duration">01/2019 - 02/2019</span>
+                            <span class="org">Fairfield Hospital</span>
+                            <ol class="intro">
+                             <li>Created images using fluoroscopy during Barium swallow 
+                                 to help physicians assess patients</li>
+                             <li>Practice C-arm machine in operation theatre</li>
+                             <li>Operated x-ray and mobile imaging equipment in 
+                                 emergency department ICU, ED and wards</li>
+                             <li>Prepared contrast materials, anesthetic for imaging procedures</li>
+                             <li>Exam post-operation patients</li>
+                             <li>Apply infection control</li>
+                            </ol>
+                            </div>
+                            <!-- exp 5 -->
+                            <div class="timeline__block">
+                            <h4 class="title">Student Radiographer</h4>
+                            <span class="duration">11/2018 - 12/2018</span>
+                            <span class="org">I-MED Erina Central Coast</span>
+                            <ol class="intro">
+                             <li>Completed CT for Chest, Abdomen, and Brain</li>
+                             <li>Bilingual translation</li>
+                             <li>Familiar use wireless DR machine</li>
+                             <li>Observed and created images of BMD</li>
+                            </ol>
+                            </div>
+                            <!-- exp 6 -->
+                            <div class="timeline__block">
+                            <h4 class="title">Student Radiographer</h4>
+                            <span class="duration">06/2018 - 07/2018</span>
+                            <span class="org">Alfred Imaging North Strathfield</span>
+                            <ol class="intro">
+                             <li>Minimised beam-restrictive exposure to patients and applied 
+                                 shielding strategies</li>
+                             <li>Educated patients on aspects of the procedure, offered
+                                 instructions and answered questions to reduce distress
+                                 and enhance cooperation</li>
+                             <li>Familiar using CR machine</li>
+                            </ol>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin--auto">
+                    <div class="col-12">
+                            <h2>Skills</h2>
+                                <div class="row">
+                                    <ol class="skill__block col-md-6">
+                                        <li>X-ray</li> 
+                                        <li>OPG</li>
+                                        <li>Non-contrast CT</li>
+                                        <li>C-arm, O-arm</li>
+                                        <li>Materials prepare (BA, Gastrografin, Contrast)</li>
+                                    </ol>
+                                    <ol class="skill__block col-md-6">                       
+                                        <li>PACS</li>
+                                        <li>Theatre</li>
+                                        <li>Mobile</li>
+                                        <li>Infection control</li>
+                                        <li>Translation</li>
+                                        <li>Bilingual (Mandarin and English)</li>
+                                    </ol>
+                                </div>
+                            <h2>Certificates</h2>
+                                <div class="cert__block row">
+                                    <div class="col-sm-2"><p class="fa fa-medkit"></p>First Aid</div>
+                                    <div class="col-sm-2"><p class="fa fa-heartbeat"></p>CPR</div>
+                                    <div class="col-sm-4"><p class="fa fa-shield"></p>National Criminal Check</div>
+                                    <div class="col-sm-4"><p class="fa fa-child"></p>Work with Children Check</div>
+                                </div>
+
+                    </div> 
+                </div>     
+            </div>
+    </section>
+    <!-- Services Main Content -->
+    <section class="services__page">
+        <div class="main">
+            <div class="header--general">
+                <h2>Services</h2>
+            </div>
+            <div class="container content--general">
+                <h2>My Services</h2>
+                <div class="row">
+                    <!-- Indicators -->
+                    <div id="carousel" class="carosel slide col-12" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                        </ol>
+                    <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/serv1.jpg" alt="MRI machine">
+                            </div>
+                            <div class="item">
+                                <img src="images/serv2.jpg" alt="office">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-sm-4">
+                       <div class="service__block">
+                            <div class="service__icon">
+                                <span class="material-icons">accessibility</span>
+                            </div>
+                            <h4 class="service__title">Specialised Radiography</h4>
+                            <div class="service__intro">Perform radiography for specific area.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service__block">
+                             <div class="service__icon">
+                                <span class="material-icons">elderly</span>
+                             </div>
+                             <h4 class="service__title">Bone Mineral Densitometry (BMD)</h4>
+                             <div class="service__intro">Uses dual energy X-ray to detail bone 
+                             health and density. 
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service__block">
+                            <div class="service__icon">
+                                <span class="material-icons">pets</span>
+                            </div>
+                            <h4 class="service__title">Pets CT</h4>
+                            <div class="service__intro">Perform CT for pets.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>My Clients</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="client__block">
+                            <div class="client__image">
+                                <img src="./images/clients/raju.jpg">
+                            </div>
+                            <p class="client__name"><a href="#">Suresh Raju</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="client__block">
+                            <div class="client__image">
+                                <img src="./images/clients/katsaros.jpg">
+                            </div>
+                            <p class="client__name"><a href="#">George Pitt</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="client__block">
+                            <div class="client__image">
+                                <img src="./images/clients/stotch.jpg">
+                            </div>
+                            <p class="client__name"><a href="#">Butters Stotch</a></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>                 
+        </div>
+    </section>
+<!-- Contact Main Content -->
+<section class="contact__page">
+<div class="main">
+    <div class="header--general">
+        <h2>Contact</h2>
+    </div>
+    <div class="content--general container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="map"></div>
+                <div class="contact__details">
+                    <div class="contact__row">
+                        <span class="material-icons">place</span>
+                        Melbourne, Australia
+                    </div>
+                    <div class="contact__row">
+                        <span class="material-icons">email</span>
+                        <a href="mailto:lrzrebecca@noname.com">lrzrebecca@noname.com</a>
+                    </div>
+                    <div class="contact__row">
+                        <span class="material-icons">call</span>
+                        +61 040 6678 889 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 container">
+                <h3>Contact Form</h3>
+                <!-- modify this form HTML and place wherever you want your form -->
+                <form action="https://formspree.io/f/xbjqlnoe" method="POST">
+                    <div class="row">
+                        <label class="col-md-4" for="name">Your name:</label>
+                        <input class="col-md-8" type="name" placeholder="Your name...">
+                    </div>
+                     <div class="row">
+                        <label class="col-md-4">Your email:</label>
+                        <input class="col-md-8"type="email" name="_replyto" placeholder="Your email...">
+                     </div>
+                     <div class="row">
+                        <label class="col-md-4">Your message:</label>
+                        <textarea class="col-md-8"name="message" placeholder="Any enquiry..."></textarea>
+                     </div>
+                   
+
+                <button type="submit" class="btn--submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+     
+     <!-- Footer -->
+     <footer>
+     <div class="footer">
+        © 2021 All rights reserved. Designed by <a href="https://github.com/ryokoko">Stella</a>.</div>
+     </div>
+     </footer>
+
+
+</body>
+</html>
