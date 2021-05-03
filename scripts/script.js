@@ -46,6 +46,12 @@ $(document).ready(function() {
 
   $(".carousel").carousel();
 
+  (function () {
+    $("[data-toggle='tooltip']").tooltip();
+  })
+  $(".client__image").tooltip('show');
+  $(".client__image").tooltip('animation', true);
+
 
 }) 
 

@@ -365,8 +365,15 @@ h2 {
      ol {
         list-style-type: disc;
     }
+
+    .client__box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
      .client__block {
          text-align: center;
+         padding-right: 5%;
          &:hover {
             transform: translate(0, -2px);
          }        
@@ -379,84 +386,14 @@ h2 {
         }
      }
      .client__image {
+         white-space: nowrap;
          img {
               border-radius: 50px;
               box-shadow: $shadow;
-              width: 50%;
-              height: 50%;
+              width: 50px;
+              height: 50px;
          }
            
-     }
-
-     /* Blog page */
-     .blog__block {
-        padding: 0 5%;
-        margin-top: 5%;
-        .blog__media {
-            height:80%;
-            position: relative;
-            img {
-                width: 100%;
-            }
-            &:hover {
-               .mask {
-                visibility:visible;
-               }
-            }
-            .mask {
-                height: 100%;
-                width:100%;
-                position: absolute;
-                background-color: $mask-color;
-                z-index:3;
-                top: 0px;
-                visibility:hidden;
-                p {
-                    text-align: center;
-                    color: $secondary-bgColor;
-                    font-size: 2rem;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%);
-
-                }
-                
-            }
-            .date {
-                position: absolute;
-                top: 6%;
-                right:6%;
-                min-width: 44px;
-                background-color: $secondary-bgColor;
-                color:$secondary-font-color;
-                z-index: 2;
-                text-align: center;
-                font-weight: 600;
-                padding: 0.3rem;
-                .day {
-                    font-size: 1.7rem;
-                }
-                .month {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        .blog__title {
-            text-align: center;
-            padding: 2% 5%;
-            
-            background-color: $secondary-bgColor;
-            text-decoration: none;
-            a {
-                font-weight: 600;
-                color:$primary-bgColor;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-
-        }
      }
     
      /* Contact page */
