@@ -66,7 +66,7 @@ body a {
   }
 
   .service__block {
-    height: 300px;
+    height: 230px;
   }
 
   .client__block {
@@ -194,6 +194,14 @@ body a {
     width: 25px;
     height: 25px;
     border-radius: 25px;
+  }
+
+  .service__block {
+    height: 100px;
+  }
+
+  .service__title {
+    font-size: 1.5rem;
   }
 }
 /* General settings */
@@ -451,9 +459,10 @@ blockquote::before {
 form label {
   color: #524c49;
   font-weight: normal;
+  width: 150px;
 }
 form input, form textarea, form select {
-  width: 200px;
+  width: 180px;
   padding: 5px 2%;
   margin: 2% 0;
   border-radius: 5px;
@@ -461,6 +470,9 @@ form input, form textarea, form select {
 }
 form input:focus, form textarea:focus, form select:focus {
   border: 3px solid #f99f6f;
+}
+form .selection--radio {
+  padding-left: 20px;
 }
 form #patient, form #doctor {
   width: 10px;

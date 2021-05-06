@@ -88,7 +88,7 @@ body {
     margin: 40px 8%;
 }
 .service__block {
-    height: 300px;
+    height: 230px;
 }
 .client__block {
     height: 500px;
@@ -204,6 +204,12 @@ blockquote {
             height:25px;
             border-radius: 25px;
         }
+    }
+    .service__block {
+        height: 100px;
+    }
+    .service__title {
+        font-size: 1.5rem;
     }
     
 }
@@ -468,9 +474,10 @@ h2 {
          label {
              color:$primary-font-color;
              font-weight: normal;
+             width:150px;
          }
          input, textarea, select {     
-             width: 200px;    
+             width: 180px;    
              padding: 5px 2%;
              margin: 2% 0;
              border-radius: 5px;
@@ -478,6 +485,9 @@ h2 {
              &:focus {
                  border: 3px solid $link-active-color;
              }
+        }
+        .selection--radio {
+            padding-left: 20px;
         }
         #patient, #doctor {
             width: 10px;

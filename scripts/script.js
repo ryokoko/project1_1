@@ -10,6 +10,11 @@ window.onload = function() {
     function closeNav() {
         document.getElementById("sidebar").style.width = "0";
     }
+    let a;
+    let tabs = document.getElementsByClassName("tab");
+    for (a=0;a<tabs.length;a++){
+      tabs[a].addEventListener("click", closeNav, false);
+    }
 
     /* Add intro to each service */
      let serviceIntro = document.createElement("div");
@@ -41,10 +46,8 @@ window.onload = function() {
               serviceBlocks[3].appendChild(serviceIntro);
               break;
           }
-          serviceIntro.style.fontSize="1.3rem";
+          serviceIntro.style.fontSize="1.4rem";
         }
-
-        serviceBlocks[i].removeEventListener("mouseout", showDescription, false);
       }
     
 }
