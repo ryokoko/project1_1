@@ -3,7 +3,7 @@ $primary-bgColor: #fdd371;
 $secondary-bgColor: #e9e7e7;
 $content-bgColor: white;
 $primary-font-color: #524c49;
-$secondary-font-color:#2c8d39;
+$secondary-font-color:#57543e;
 $link-active-color: #f99f6f;
 $mask-color: rgba(245, 227, 63, 0.267);
 
@@ -88,14 +88,15 @@ body {
     margin: 40px 8%;
 }
 .service__block {
-    height: 230px;
+    min-height: 200px;
 }
 .client__block {
-    height: 500px;
+    min-height: 400px;
+    height: auto;
 }
 blockquote {
     font-size: 2rem;
-    flex-grow: 9;
+    flex-grow: 6;
 }
 .client__image {
     flex-grow:1;
@@ -181,18 +182,17 @@ blockquote {
     .main {
         margin: 20px;
         box-shadow: $shadow;
-        z-index:10;
     }
     .padding-top {
         padding-top: 10px;
     }
     blockquote {
         font-size: 1.5rem;
-        flex-grow:4
+        flex-grow:3;
     }
     
     .client__name {
-        font-size: 1rem;
+        font-size: 1.2rem;
         bottom: 0;
         left: 10%;
         flex-grow:1;
@@ -206,7 +206,7 @@ blockquote {
         }
     }
     .service__block {
-        height: 100px;
+        min-height: 100px;
     }
     .service__title {
         font-size: 1.5rem;
@@ -234,7 +234,8 @@ h2 {
 .main {
     background-color: $content-bgColor;
     border-radius: 10px;
-    z-index:2;
+    z-index:10;
+    position:relative;
     .home__header {
         width: 100%;
         height: 40%;
@@ -406,12 +407,16 @@ h2 {
     }
     #carousel-indicators {
         position: absolute;
-        bottom: -30px;
+        bottom: -50px;
         left: 50%;
+    }
+    .item img {
+        width: 100%;
     }
     .service__block {
             @include mask-module();
             text-align: center;
+            height: auto;
             span, .service__title {  
 
                 color: $link-active-color;

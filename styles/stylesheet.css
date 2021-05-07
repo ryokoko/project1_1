@@ -66,16 +66,17 @@ body a {
   }
 
   .service__block {
-    height: 230px;
+    min-height: 200px;
   }
 
   .client__block {
-    height: 500px;
+    min-height: 400px;
+    height: auto;
   }
 
   blockquote {
     font-size: 2rem;
-    flex-grow: 9;
+    flex-grow: 6;
   }
 
   .client__image {
@@ -168,7 +169,6 @@ body a {
   .main {
     margin: 20px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    z-index: 10;
   }
 
   .padding-top {
@@ -177,11 +177,11 @@ body a {
 
   blockquote {
     font-size: 1.5rem;
-    flex-grow: 4;
+    flex-grow: 3;
   }
 
   .client__name {
-    font-size: 1rem;
+    font-size: 1.2rem;
     bottom: 0;
     left: 10%;
     flex-grow: 1;
@@ -197,7 +197,7 @@ body a {
   }
 
   .service__block {
-    height: 100px;
+    min-height: 100px;
   }
 
   .service__title {
@@ -225,7 +225,8 @@ h2 {
 .main {
   background-color: white;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 10;
+  position: relative;
 }
 .main .home__header {
   width: 100%;
@@ -387,8 +388,12 @@ h2 {
 
 #carousel-indicators {
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
   left: 50%;
+}
+
+.item img {
+  width: 100%;
 }
 
 .service__block {
@@ -396,6 +401,7 @@ h2 {
   background-color: rgba(245, 227, 63, 0.267);
   position: relative;
   text-align: center;
+  height: auto;
 }
 .service__block:hover {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
@@ -490,7 +496,7 @@ form .btn--submit:hover {
 
 /* Footer */
 .footer {
-  color: #2c8d39;
+  color: #57543e;
   position: fixed;
   font-size: 1rem;
   bottom: 0;
