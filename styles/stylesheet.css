@@ -396,6 +396,10 @@ h2 {
   width: 100%;
 }
 
+.margin-top {
+  margin-top: 30px;
+}
+
 .service__block {
   padding: 2% 5%;
   background-color: rgba(245, 227, 63, 0.267);

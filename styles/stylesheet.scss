@@ -15,7 +15,15 @@ $font: Arial, Helvetica, sans-serif;
 $nav-font-size: 2rem;
 $breakpoint: 768px;
 
-
+@mixin header-name {
+    float: left;
+    color: $primary-font-color;
+    font-weight: $font-weight;
+    font-size: 35px;
+    span {
+        color: $link-active-color;
+    }
+}
 @mixin mask-module {
         padding: 2% 5%;
         background-color: $mask-color;
@@ -48,14 +56,9 @@ body {
 
 }
 .header__name {
-    float: left;
-    color: $primary-font-color;
-    font-weight: $font-weight;
-    font-size: 35px;
+    @include header-name();
     margin: 15px 4%;
-    span {
-        color: $link-active-color;
-    }
+
 }
 .header__nav {
     float: right;
@@ -126,15 +129,9 @@ blockquote {
     }
     /* 记得用mixin来做header__name */
     .header__name {
-        float: left;
-        color: $primary-font-color;
-        font-weight: $font-weight;
-        font-size: 35px;
+        @include header-name();
         margin-left: 20px;
         padding-top: 5px;
-        span {
-            color: $link-active-color;
-        }
     }
     #sidebar {
         height: 100%;
@@ -412,6 +409,9 @@ h2 {
     }
     .item img {
         width: 100%;
+    }
+    .margin-top {
+        margin-top: 30px;
     }
     .service__block {
             @include mask-module();

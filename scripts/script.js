@@ -48,6 +48,25 @@ window.onload = function() {
           }
           serviceIntro.style.fontSize="1.4rem";
         }
+        
+        let hideDescription = () =>{
+            switch (serviceBlocks[i]) {
+              case serviceBlocks[0]:
+                serviceBlocks[0].removeChild(serviceIntro);
+                break;
+              case serviceBlocks[1]:
+                serviceBlocks[1].removeChild(serviceIntro);
+                break;
+              case serviceBlocks[2]:
+                serviceBlocks[2].removeChild(serviceIntro);
+                break;
+              case serviceBlocks[3]:
+                serviceBlocks[3].removeChild(serviceIntro);
+                break;
+            }
+        
+        }
+        serviceBlocks[i].addEventListener('mouseout',hideDescription, false);
       }
     
 }
@@ -84,13 +103,6 @@ $(document).ready(function() {
   });
 
   $(".carousel").carousel();
-
-  (function () {
-    $("[data-toggle='tooltip']").tooltip();
-  })
-  $(".btn--submit").tooltip('show')
-
-
 
 }) 
 
